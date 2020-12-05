@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Notes</string>
+    <string name="no_notes_yet">No notes yet</string>
+    <string name="leave">Leave?</string>
+    <string name="leave_without_saving">Your progress will be lost</string>
+    <string name="write_here">Write your piece of art here!</string>
+    <string name="delete">Delete?</string>
+    <string name="delete_description">You can\'t undone this</string>
+    <string name="edit_title">Edit</string>
+
+</resources>

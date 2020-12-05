@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/iv_back"
+                android:padding="12dp"
+                app:srcCompat="@drawable/ic_back_24"
+                app:tint="?colorAccent"
+                android:background="?android:selectableItemBackgroundBorderless"
+                android:layout_width="?actionBarSize"
+                android:layout_height="?actionBarSize"/>
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:textColor="?colorAccent"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:gravity="center_vertical"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                tools:text="Title"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+
+        <com.divaltor.notes.view.FitScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/et_edit"
+                android:hint="@string/write_here"
+                android:textColorHint="?android:textColorSecondary"
+                android:textColor="?android:textColorPrimary"
+                android:background="@null"
+                android:layout_gravity="top"
+                android:gravity="top"
+                android:padding="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </com.divaltor.notes.view.FitScrollView>
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_gravity="end|bottom"
+        android:layout_margin="16dp"
+        app:backgroundTint="?colorAccent"
+        app:tint="#FFF"
+        android:src="@drawable/ic_done_outline_28"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</FrameLayout>
